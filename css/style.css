@@ -120,6 +120,8 @@ section{
     justify-content: center;
     align-items: center;
     gap: 24px;
+
+    position: relative;
 }
 
 .about-img{
@@ -178,6 +180,15 @@ section{
 .about-btn{
     margin-left: auto; 
     margin-top: 28px;
+}
+
+.leaf1{
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    width: 128px;
+    height: 144px;
+    object-fit: contain;
 }
 
 .sense {
@@ -357,6 +368,10 @@ section{
     gap: 67px;
 }
 
+.guide{
+    position: relative;
+}
+
 .guide-inner{
     width: 769px;
     margin: 0 auto;
@@ -425,6 +440,15 @@ section{
     margin: 48px auto 0;
     width: 253px;
     white-space: nowrap;
+}
+
+.leaf-2{
+    position: absolute;
+    left: 90px;
+    top: 200px;
+
+    width: 134px;
+    height: 175px;
 }
 
 .voice-inner{
@@ -1104,6 +1128,11 @@ nav{
 .footer small{
     font-size: 10px;
     margin-top:64px
+}
+
+.leaf1,
+.leaf-2{
+    display: none;
 }
 }
 
