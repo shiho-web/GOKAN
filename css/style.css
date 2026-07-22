@@ -12,11 +12,27 @@ body{
 
 .header-inner{
     max-width: 1200px;
-    margin: 0 auto;
+    margin:0 auto;
+    width: calc(100% - 80px);
     height: 105px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo{
+    margin: 0;
+    line-height: 1;
+}
+
+.logo a{
+    display: block;
+}
+
+.logo img{
+    display: block;
+    width: 133px;
+    height: auto;
 }
 
 .menu-btn{
@@ -65,6 +81,13 @@ body{
 
 }
 
+.menu li:last-child a:hover{
+    text-decoration: none;
+    background-color: #bc8731;
+    color: #fff;
+    
+}
+
 section{
     margin-bottom: 120px;
 }
@@ -72,6 +95,10 @@ section{
 .fv{
     position: relative;
 }    
+
+.fv > p{
+    margin: 0;
+}
 
 .fv img{
     width: 100%;
@@ -173,8 +200,11 @@ section{
 }
 
 .btn:hover{
-    text-decoration: underline;
-    color: #d8c8b6;
+    background-color:#475f40 ;
+    color: #fff;
+    text-decoration: none;
+    
+ 
 }
 
 .about-btn{
@@ -241,7 +271,15 @@ section{
     font-weight: 100;
     line-height: 24px;
     color: #4e4a46;
-    width: 420px;
+    width: 432px;
+}
+
+.sense-text h3{
+    font-size: 20px;
+    font-family:"Noto Sans JP",sans-serif;
+    font-weight: 500;
+    color: #4e4a46;
+    margin:0 0 8px;
 }
 
 .plan-inner{
@@ -260,7 +298,7 @@ section{
 }
 
 .plan-lead{
-    margin: 30px 0;
+    margin: 28px 0 30px;
     font-family: "Noto Sans JP";
     font-size: 16px;
     font-weight: 100;
@@ -285,13 +323,17 @@ section{
 }
 
 .plan-text{
+    width: 387px;
+    max-width: 100%;
+    margin: 24px auto 0;
+
     font-family: "Noto Sans JP",sans-serif;
     font-size: 16px;
     font-weight: 100;
     color: #4e4a46;
     margin-top: 24px;
     margin-bottom: 0;
-    text-align: center;
+    text-align:left;
 }
 
 .plan-btn{
@@ -300,7 +342,7 @@ section{
 
 .support{
     background-color:#e7e7dd;
-    padding: 43px 0;
+    padding: 27px 0 43px;
 }
 .support-inner{
     width: 1200px;
