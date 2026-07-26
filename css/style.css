@@ -698,9 +698,99 @@ section{
     text-align: center;
 
 }
+@media screen and (max-width:1370px){
+    .leaf-2{
+        display: none;
+    }
+.support-inner{
+    width: calc(100% - 80px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-@media screen and (max-width:768px){
-   
+.support-list{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 50px;
+}
+
+.support-item{
+    width: 100%;
+    min-width: 0;
+    gap: 16px;
+}
+
+.support-item img{
+    width: 180px;
+    height: 180px;
+}
+
+.support-text{
+    width: 100%;
+}
+
+.support-text h3{
+    font-size: 20px;
+}
+
+.support-text p{
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.support-bottom .support-text{
+    max-width: 200px;
+}
+}
+
+@media screen and (max-width:1370px){
+    .leaf-2{
+        display: none;
+    }
+.support-inner{
+    width: calc(100% - 80px);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.support-list{
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    row-gap: 50px;
+}
+
+.support-item{
+    width: 100%;
+    min-width: 0;
+    gap: 16px;
+}
+
+.support-item img{
+    width: 180px;
+    height: 180px;
+}
+
+.support-text{
+    width: 100%;
+}
+
+.support-text h3{
+    font-size: 20px;
+}
+
+.support-text p{
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.support-bottom .support-text{
+    max-width: 200px;
+}
+}
+
+
+
+@media screen and (max-width: 900px){  
 .header-inner{
     width: calc(100% - 40px);
     height: 70px;
@@ -813,7 +903,7 @@ nav{
 }
 
 .fv-text h1{
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5;
     margin-bottom: 24px;
 }
@@ -828,9 +918,13 @@ nav{
     display: none;
 }
 
+.section{
+    padding: 60px 0;
+}
+
 .about{
     width: calc(100% - 40px);
-    margin:  80px auto 0;
+    margin:  60px auto 0;
     flex-direction: column;
     gap: 32px;
 }
@@ -848,7 +942,7 @@ nav{
 }
 
 .about-text h2{
-    font-size: 20px;
+    font-size: 19px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -872,7 +966,7 @@ nav{
 }
 
 .sense-inner h2{
-    font-size: 28px;
+    font-size: 34px;
     line-height: 1.5;
 }
 .sense-list{
@@ -881,8 +975,9 @@ nav{
 
 .sense-item{
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 20px;
+    ;
 }
 
 .sense-item + .sense-item{
@@ -898,16 +993,19 @@ nav{
 
 
 .sense-text{
-    width: 100%;
+    max-width: 520px;
+    margin: 0;
 }
 
 .sense-text h3{
     font-size: 20px;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .sense-text p{
     line-height: 1.8;
+    text-align: left;
 }
 
 .sense-text br{
@@ -924,12 +1022,11 @@ nav{
 }
 
 .plan-lead{
-    font-size: 15px;
+    font-size: 12px;
     line-height: 1.8;
     width: 100%;
-    max-width: 380px;
+ 
     margin: 24px auto 40px;
-    white-space: nowrap;
    
 }
 
@@ -966,7 +1063,7 @@ nav{
     padding:60px 0;
 }
 
-.support-innner{
+.support-inner{
     width: calc(100% - 40px);
 }
 
@@ -982,7 +1079,6 @@ nav{
 }
 
 .support-item{
-    width: 100%;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -995,6 +1091,8 @@ nav{
 
 .support-text{
     width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
 }
 
 .support-text h3{
@@ -1016,6 +1114,12 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 48px;
+}
+
+.support-bottom .support-text{
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
 }
 
 .guide-inner{
@@ -1066,6 +1170,7 @@ nav{
 .voice-inner{
     width: calc(100% - 40px);
     margin-bottom: 40px;
+    box-sizing: border-box;
 }
 
 .voice h2{
@@ -1157,9 +1262,16 @@ nav{
 }
 
 .footer-content{
-    width: 260px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
     margin: 0 auto;
-    justify-content: flex-start;
+}
+
+.footer-content img{
+    width: 24px;
+    flex-shrink: 0;
 }
 
 .footer-text{
@@ -1171,8 +1283,27 @@ nav{
     text-align: left;
 }
 
+.footer-item:nth-child(2) .footer-content{
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+.footer-item:nth-child(2) .footer-content p{
+    text-align: left;
+    margin: 0;
+}
+
+.footer-sns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
 .footer-sns .footer-content{
-    width: 220px;
+    width: fit-content;
+    margin: 0 auto;
     justify-content: flex-start;
 }
 
@@ -1186,4 +1317,3 @@ nav{
     display: none;
 }
 }
-
