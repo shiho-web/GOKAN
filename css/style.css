@@ -238,9 +238,11 @@ section{
     margin-bottom: 120px;
 }
 
-.sense-inner {
-    width: 1200px;
+.sense-inner{
+    width: calc(100% - 80px);
+    max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .sense h2 {
